@@ -10,7 +10,7 @@
 - 렌더 파이프라인: URP 17.3.0
 - 플랫폼: Windows PC, 키보드·마우스
 - 단계: W02 프로젝트 셋업 및 TPS 이동 그레이박스
-- 외부 에셋: 주인공 `Striker14` 채택 · **아직 설치하지 않음**
+- 외부 에셋: 주 환경 `Modern Industrial Pack`, 주인공 `Striker14` 채택 · **아직 설치하지 않음**
 
 ## 핵심 플레이
 
@@ -73,3 +73,5 @@ Unity Hub에서 `BlackOut` 폴더를 Unity `6000.3.22f1`로 연다. 조작법과
 유료 에셋은 사용하지 않는다. 외부 에셋은 원본 배포 페이지와 라이선스를 [에셋 원장](docs/BLACKOUT_AssetManifest.json)에 기록한 뒤, Unity 6 URP에서 재질·리그·성능을 통과한 것만 실제 사용 상태로 바꾼다. 저장소에 포함된 외부 원본 파일은 각 배포처의 재배포 조건을 따른다.
 
 주인공은 Sketchfab의 [Jumpsuit Low Poly Game Ready (Striker14)](https://sketchfab.com/3d-models/jumpsuit-low-poly-game-ready-striker14-da288adbddf949aa85962968732f0999)를 채택했다. CC BY 4.0 출처 표기가 필요하며, 현재는 Unity Humanoid와 TPS 애니메이션 검증 전이다.
+
+주 환경은 ProductionCrate/RenderCrate의 [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack)을 채택했다. 무료 FBX 2K 버전을 기준으로 사용하며, 현재는 Unity URP 재질·콜라이더·성능 검증 전이다.

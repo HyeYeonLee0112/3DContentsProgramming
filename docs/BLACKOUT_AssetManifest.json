@@ -33,17 +33,17 @@
     },
     {
       "id": "ENV-01",
-      "name": "RPG/FPS Game Assets for PC/Mobile (Industrial Set v3.0)",
+      "name": "Modern Industrial Pack",
       "category": "environment",
-      "source": "Unity Asset Store",
-      "sourceUrl": "https://assetstore.unity.com/packages/3d/environments/industrial/rpg-fps-game-assets-for-pc-mobile-industrial-set-v3-0-101429",
-      "creator": "Dmitrii Kutsenko",
-      "license": "Standard Unity Asset Store EULA",
-      "priceVerified": "FREE on 2026-09-09",
-      "status": "candidate",
+      "source": "ProductionCrate / RenderCrate",
+      "sourceUrl": "https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack",
+      "creator": "ProductionCrate",
+      "license": "ProductionCrate Extended Use License; commercial and non-commercial project use; no attribution required",
+      "priceVerified": "free 1K, 2K, 4K, 8K and FBX downloads verified on 2026-09-09",
+      "status": "selected",
       "plannedUse": "cargo terminal modular environment",
       "localPath": null,
-      "qa": ["Unity 6.3 import", "URP materials", "scale", "colliders", "lightmap UV", "60 fps build"]
+      "qa": ["save license/download record", "use free 2K FBX version", "Unity 6.3 import", "URP material conversion", "1 meter scale", "simple colliders", "lightmap UV", "texture and draw-call budget", "60 fps build", "do not redistribute raw source files"]
     },
     {
       "id": "CHR-01",

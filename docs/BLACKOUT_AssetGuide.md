@@ -15,7 +15,7 @@
 
 | ID | 역할 | 1차 선정 에셋 | 무료/라이선스 | 시각 적합 | 기술 준비 | 판정 |
 |---|---|---|---|:--:|:--:|---|
-| ENV-01 | 주 환경 | [RPG/FPS Game Assets for PC/Mobile (Industrial Set v3.0)](https://assetstore.unity.com/packages/3d/environments/industrial/rpg-fps-game-assets-for-pc-mobile-industrial-set-v3-0-101429) | FREE · Standard Unity Asset Store EULA | 5/5 | 4/5 | **먼저 시험** |
+| ENV-01 | 주 환경 | [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack) · ProductionCrate/RenderCrate | 무료 · Extended Use License · 출처 표기 불필요 | 5/5 | 3/5 | **채택 · Unity 검증 전** |
 | CHR-01 | 주인공 | [Jumpsuit Low Poly Game Ready (Striker14)](https://sketchfab.com/3d-models/jumpsuit-low-poly-game-ready-striker14-da288adbddf949aa85962968732f0999) · DanlyVostok | 무료 · CC BY 4.0 | 5/5 | 4/5 | **채택 · Unity 검증 전** |
 | ENM-01 | 추적 로봇 | [Combat Robot Unit influenced — By GBaroni art](https://sketchfab.com/3d-models/combat-robot-unit-influenced-by-gbaroni-art-86fbb9e89e2a47628a2b34ee5ee4c763) · RoboticModels | 무료 · CC BY | 4/5 | 3/5 | 리그·LOD 시험 |
 | ENM-02 | 포탑 | [Sentry Turret — Darwin Auto Cannon](https://sketchfab.com/3d-models/sentry-turret-darwin-auto-cannon-17840b0ce9754d78b0610e525a7a7ef5) · seangorman | 무료 · CC BY | 4/5 | 4/5 | 축 분리 시험 |
@@ -24,6 +24,8 @@
 
 ### 왜 이 조합인가
 
+- `Modern Industrial Pack`은 400개 이상의 계단·플랫폼·비계·배관·덕트·케이블·조명 모듈을 제공하므로 화물역 구조와 소품을 한 제품군으로 구성할 수 있다.
+- FBX와 1K·2K·4K·8K 텍스처가 제공되지만 Unity 전용 패키지는 아니다. 무료 2K FBX를 기준으로 직접 URP 재질·콜라이더·프리팹을 구성한다.
 - 환경, 총, 로봇 모두 현실적인 PBR 금속과 산업용 형태를 사용해 같은 조명에서 묶기 쉽다.
 - 주인공은 갑옷이 아닌 몸에 맞는 점프슈트를 입어 군인보다 현장 기술자로 읽힌다. 검정·차콜 의상은 산업 환경과 이미 가깝고, 주황 발광선을 청록 전력 표시로 바꾸면 게임의 색상 규칙과 연결된다.
 - 주인공 모델은 약 12.5k triangles이며 배포 설명에 리깅 모델과 비리깅 모델이 모두 포함된다고 명시되어 있다. 등 실루엣이 단순해 기존 산업 소품을 배터리 장치로 부착하기도 쉽다.
@@ -65,9 +67,9 @@
 ### 1단계 — 환경 한 개
 
 1. 프로젝트를 Git 커밋으로 깨끗하게 만든다.
-2. `ENV-01`만 My Assets에 추가하고 새 테스트 장면에 import한다.
+2. ProductionCrate에서 `ENV-01`의 무료 2K FBX 버전을 내려받고 새 테스트 장면에 import한다.
 3. 콘솔 오류, 분홍 재질, 1m 스케일, 콜라이더, 라이트맵 UV를 확인한다.
-4. 필요한 프리팹만 `Assets/ThirdParty/DmitriiKutsenko/IndustrialSet`에 둔다.
+4. 필요한 모델과 텍스처만 `Assets/ThirdParty/ProductionCrate/ModernIndustrialPack`에 둔다.
 5. 60fps와 빌드를 통과하면 환경을 임시 승인한다.
 
 ### 2단계 — 주인공과 애니메이션
@@ -99,7 +101,7 @@ BlackOut/Assets/
 │  ├─ UI
 │  └─ VFX
 └─ ThirdParty/
-   ├─ DmitriiKutsenko/IndustrialSet
+   ├─ ProductionCrate/ModernIndustrialPack
    ├─ Sketchfab/CreatorName/AssetName
    ├─ UnityTechnologies/ParticlePack
    ├─ Mixamo
@@ -149,6 +151,7 @@ BlackOut/Assets/
 Sketchfab CC BY는 제작자와 원본 링크를 표시해야 한다. Unity Asset Store 에셋은 게임에 포함해 사용할 수 있지만 원본 파일을 별도 에셋처럼 재배포하면 안 된다. Mixamo는 Adobe ID로 무료이며 게임 사용이 가능하다. 자세한 근거는 다음 원문을 기준으로 한다.
 
 - [Unity Asset Store EULA](https://unity.com/legal/as-terms)
+- [ProductionCrate Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack)
 - [Sketchfab 다운로드 모델 표기 지침](https://sketchfab.com/developers/download-api/guidelines)
 - [Adobe Mixamo FAQ](https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html)
 - [Sonniss GDC Bundle License](https://sonniss.com/gdc-bundle-license/)

@@ -28,6 +28,8 @@
 
 ## 4. 형태와 실루엣
 
+주 환경은 ProductionCrate/RenderCrate의 [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack)으로 고정한다. 이 팩의 직선형 플랫폼·비계·배관·덕트·케이블을 환경의 형태 기준으로 삼으며, 다른 환경 소품도 이보다 더 깨끗하거나 더 미래적으로 보이면 사용하지 않는다.
+
 | 대상 | 기본 형태 | 멀리서 읽혀야 하는 특징 | 금지 |
 |---|---|---|---|
 | 환경 | 직각 철골, I빔, 컨테이너, 굵은 케이블 | 수평 이동로와 수직 승강기 | 둥근 우주선 복도, 과도한 장식 |
@@ -147,4 +149,4 @@
 5. 환경·주인공·적·보스를 같은 조명 아래 한 화면에 놓는다.
 6. 위 색상·재질 규칙을 적용한 뒤에도 어색하면 에셋을 교체한다.
 
-주인공 `CHR-01 Striker14`는 기획·시각 기준으로 채택했다. 아직 설치되지 않았으며, [에셋 가이드](BLACKOUT_AssetGuide.md)의 Unity 검증 게이트를 통과한 뒤에만 제작용 `approved`로 바뀐다. 나머지 외부 에셋은 후보 상태다.
+주 환경 `ENV-01 Modern Industrial Pack`과 주인공 `CHR-01 Striker14`는 기획·시각 기준으로 채택했다. 아직 설치되지 않았으며, [에셋 가이드](BLACKOUT_AssetGuide.md)의 Unity 검증 게이트를 통과한 뒤에만 제작용 `approved`로 바뀐다. 나머지 외부 에셋은 후보 상태다.
