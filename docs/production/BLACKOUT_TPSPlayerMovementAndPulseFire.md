@@ -170,9 +170,11 @@ Main Camera
 └─ ThirdPersonCameraRig             ← Follow: Camera_Target, Camera: Main Camera
 ```
 
-외부 StriPlayerInputReaderker14 원본 모델에는 직접 코드를 붙이지 않는다. `Player_Root` 프리팹이 모델을 자식으로 참조해야 원본 재가져오기와 게임 설정 변경이 분리된다.
+외부 Striker14 원본 모델에는 직접 코드를 붙이지 않는다. `Player_Root` 프리팹이 모델을 자식으로 참조해야 원본 재가져오기와 게임 설정 변경이 분리된다.
 
 ## 7. 입력 설계: 장치를 읽지 말고 의도를 읽는다
+
+Unity Input Actions Editor에서 `Gameplay` Map과 Move·Look·Jump·Aim·Fire·Interact를 실제로 만드는 클릭 순서는 [Input Actions 설정 따라 하기](BLACKOUT_InputActionsSetup.md)에 정리했다. 먼저 이 설정을 마친 뒤 아래 Reader 구조를 구현한다.
 
 ### 7.1 `BlackoutInputActions` 권장 구성
 
