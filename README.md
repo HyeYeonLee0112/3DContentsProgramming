@@ -10,7 +10,7 @@
 - 렌더 파이프라인: URP 17.3.0
 - 플랫폼: Windows PC, 키보드·마우스
 - 단계: W02 프로젝트 셋업 및 TPS 이동 그레이박스
-- 외부 에셋: 주 환경 `Modern Industrial Pack`, 주인공 `Striker14` 채택 · **아직 설치하지 않음**
+- 외부 에셋: 주 환경 `Sci-Fi Construction Kit (Modular)`, 주인공 `Striker14` 채택 · **주 환경은 설치·URP 검증 전**
 
 ## 핵심 플레이
 
@@ -39,11 +39,13 @@ flowchart LR
 
 ## 문서
 
-- [게임 기획서](docs/BLACKOUT_PRD.md)
-- [아트 바이블](docs/BLACKOUT_ArtBible.md)
-- [무료 에셋 선정·설치 가이드](docs/BLACKOUT_AssetGuide.md)
-- [에셋 상태와 출처 원장](docs/BLACKOUT_AssetManifest.json)
-- [강의계획서](docs/강의계획서.md)
+- [전체 문서 구조와 안내](docs/README.md)
+- [게임 기획서](docs/planning/BLACKOUT_PRD.md)
+- [아트 바이블](docs/art-direction/BLACKOUT_ArtBible.md)
+- [폰트·타이포그래피 가이드](docs/art-direction/BLACKOUT_Typography.md)
+- [무료 에셋 선정·설치 가이드](docs/assets/BLACKOUT_AssetGuide.md)
+- [에셋 상태와 출처 원장](docs/assets/BLACKOUT_AssetManifest.json)
+- [강의계획서](docs/course/강의계획서.md)
 
 ## 주차별 구현
 
@@ -70,8 +72,8 @@ Unity Hub에서 `BlackOut` 폴더를 Unity `6000.3.22f1`로 연다. 조작법과
 
 ## 에셋과 출처
 
-유료 에셋은 사용하지 않는다. 외부 에셋은 원본 배포 페이지와 라이선스를 [에셋 원장](docs/BLACKOUT_AssetManifest.json)에 기록한 뒤, Unity 6 URP에서 재질·리그·성능을 통과한 것만 실제 사용 상태로 바꾼다. 저장소에 포함된 외부 원본 파일은 각 배포처의 재배포 조건을 따른다.
+유료 에셋은 사용하지 않는다. 외부 에셋은 원본 배포 페이지와 라이선스를 [에셋 원장](docs/assets/BLACKOUT_AssetManifest.json)에 기록한 뒤, Unity 6 URP에서 재질·리그·성능을 통과한 것만 실제 사용 상태로 바꾼다. 저장소에 포함된 외부 원본 파일은 각 배포처의 재배포 조건을 따른다.
 
 주인공은 Sketchfab의 [Jumpsuit Low Poly Game Ready (Striker14)](https://sketchfab.com/3d-models/jumpsuit-low-poly-game-ready-striker14-da288adbddf949aa85962968732f0999)를 채택했다. CC BY 4.0 출처 표기가 필요하며, 현재는 Unity Humanoid와 TPS 애니메이션 검증 전이다.
 
-주 환경은 ProductionCrate/RenderCrate의 [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack)을 채택했다. 무료 FBX 2K 버전을 기준으로 사용하며, 현재는 Unity URP 재질·콜라이더·성능 검증 전이다.
+주 환경은 Sickhead Games의 [Sci-Fi Construction Kit (Modular)](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-construction-kit-modular-159280)을 채택했다. 벽·바닥·천장·통로·계단과 창고 소품을 한 팩에서 구성할 수 있다는 점을 우선했으며, 현재는 Unity 6 URP 재질·모듈 결합·콜라이더·성능 검증 전이다. 이미 가져온 `Modern Industrial Pack`은 주환경이 아니라 철골 발판·배관·케이블·조명 보조용으로만 검토한다.

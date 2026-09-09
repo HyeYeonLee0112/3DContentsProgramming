@@ -6,7 +6,7 @@
 
 ## 1. 시각 목표
 
-![BLACKOUT 전력 상태 시각 목표](art/BLACKOUT_VisualTarget.png)
+![BLACKOUT 전력 상태 시각 목표](../images/art-direction/BLACKOUT_VisualTarget.png)
 
 이 이미지는 2026-09-09에 생성한 **방향 확인용 콘셉트 이미지**다. 실제 게임 화면이나 설치된 에셋이 아니다. 구현 시 그대로 복제하는 것이 아니라 다음 세 가지만 맞춘다.
 
@@ -28,7 +28,7 @@
 
 ## 4. 형태와 실루엣
 
-주 환경은 ProductionCrate/RenderCrate의 [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack)으로 고정한다. 이 팩의 직선형 플랫폼·비계·배관·덕트·케이블을 환경의 형태 기준으로 삼으며, 다른 환경 소품도 이보다 더 깨끗하거나 더 미래적으로 보이면 사용하지 않는다.
+주 환경은 Sickhead Games의 [Sci-Fi Construction Kit (Modular)](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-construction-kit-modular-159280)로 고정한다. 벽·바닥·천장·통로·계단으로 닫힌 창고 공간을 먼저 만들고, 선반·상자·팔레트·배럴·환기 덕트·배관·조명으로 사용 흔적과 공간 밀도를 만든다. 원본의 깨끗한 SF 인상은 프로젝트 공통 재질, 제한된 발광, 오염 데칼과 조명으로 눌러 “오래 사용한 공공 화물 시설”에 맞춘다. `Modern Industrial Pack`은 철골 발판·배관·케이블처럼 새 주환경에 형태와 재질이 맞는 일부 부품만 보조로 사용한다.
 
 | 대상 | 기본 형태 | 멀리서 읽혀야 하는 특징 | 금지 |
 |---|---|---|---|
@@ -120,6 +120,7 @@
 - 체력과 전력은 다른 형태를 쓴다: 체력은 가로 막대, 전력은 독립된 세 칸.
 - 검은 반투명 패널과 흰 글자, 청록 정상, 황색 주의, 적색 실패만 사용한다.
 - 화면 장식보다 월드 안의 조명·소켓·적 센서가 먼저 정보를 전달한다.
+- 한글·영문 글꼴, 크기, 굵기와 Unity 적용 기준은 [폰트·타이포그래피 가이드](BLACKOUT_Typography.md)를 따른다.
 
 ### 사운드
 
@@ -149,4 +150,4 @@
 5. 환경·주인공·적·보스를 같은 조명 아래 한 화면에 놓는다.
 6. 위 색상·재질 규칙을 적용한 뒤에도 어색하면 에셋을 교체한다.
 
-주 환경 `ENV-01 Modern Industrial Pack`과 주인공 `CHR-01 Striker14`는 기획·시각 기준으로 채택했다. 아직 설치되지 않았으며, [에셋 가이드](BLACKOUT_AssetGuide.md)의 Unity 검증 게이트를 통과한 뒤에만 제작용 `approved`로 바뀐다. 나머지 외부 에셋은 후보 상태다.
+주 환경 `ENV-01 Sci-Fi Construction Kit (Modular)`와 주인공 `CHR-01 Striker14`는 기획·시각 기준으로 채택했다. 주환경은 아직 설치되지 않았고, 두 에셋 모두 [에셋 가이드](../assets/BLACKOUT_AssetGuide.md)의 Unity 검증 게이트를 통과한 뒤에만 제작용 `approved`로 바뀐다. `Modern Industrial Pack`은 설치되어 있으나 주환경 부적합 판정을 받아 보조 부품만 시험하는 상태다. 나머지 외부 에셋은 후보 상태다.

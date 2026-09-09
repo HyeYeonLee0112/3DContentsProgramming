@@ -5,9 +5,9 @@
 
 ## 먼저 알아둘 점
 
-현재 `BlackOut/Assets`에는 Unity 기본 파일만 있고 아래 외부 에셋은 **아직 설치되지 않았다**. 이 문서는 “다 받아라” 목록이 아니라, 통일성이 가장 좋은 1차 조합과 탈락 조건을 기록한 도입 계획이다.
+현재 `Modern Industrial Pack`과 `Striker14` 원본은 `BlackOut/Assets/ThirdParty`에 들어와 있다. 새 주환경 `Sci-Fi Construction Kit (Modular)`와 나머지 후보는 아직 설치되지 않았다. 이 문서는 “다 받아라” 목록이 아니라, 통일성이 가장 좋은 1차 조합과 탈락 조건을 기록한 도입 계획이다.
 
-에셋 스토어의 `FREE`는 조사일 기준이다. 설치 직전에 가격과 라이선스를 다시 확인하고, Sketchfab 자료는 다운로드 화면의 라이선스 문구를 캡처해 `docs/licenses/`에 보관한다.
+에셋 스토어의 `FREE`는 조사일 기준이다. 설치 직전에 가격과 라이선스를 다시 확인하고, Sketchfab 자료는 다운로드 화면의 라이선스 문구를 캡처해 `docs/assets/licenses/`에 보관한다.
 
 ## 1. 권장 조합
 
@@ -15,7 +15,7 @@
 
 | ID | 역할 | 1차 선정 에셋 | 무료/라이선스 | 시각 적합 | 기술 준비 | 판정 |
 |---|---|---|---|:--:|:--:|---|
-| ENV-01 | 주 환경 | [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack) · ProductionCrate/RenderCrate | 무료 · Extended Use License · 출처 표기 불필요 | 5/5 | 3/5 | **채택 · Unity 검증 전** |
+| ENV-01 | 주 환경 | [Sci-Fi Construction Kit (Modular)](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-construction-kit-modular-159280) · Sickhead Games | FREE · Standard Unity Asset Store EULA | 5/5 | 2/5 | **채택 · 설치/Unity 6 URP 검증 전** |
 | CHR-01 | 주인공 | [Jumpsuit Low Poly Game Ready (Striker14)](https://sketchfab.com/3d-models/jumpsuit-low-poly-game-ready-striker14-da288adbddf949aa85962968732f0999) · DanlyVostok | 무료 · CC BY 4.0 | 5/5 | 4/5 | **채택 · Unity 검증 전** |
 | ENM-01 | 추적 로봇 | [Combat Robot Unit influenced — By GBaroni art](https://sketchfab.com/3d-models/combat-robot-unit-influenced-by-gbaroni-art-86fbb9e89e2a47628a2b34ee5ee4c763) · RoboticModels | 무료 · CC BY | 4/5 | 3/5 | 리그·LOD 시험 |
 | ENM-02 | 포탑 | [Sentry Turret — Darwin Auto Cannon](https://sketchfab.com/3d-models/sentry-turret-darwin-auto-cannon-17840b0ce9754d78b0610e525a7a7ef5) · seangorman | 무료 · CC BY | 4/5 | 4/5 | 축 분리 시험 |
@@ -24,8 +24,8 @@
 
 ### 왜 이 조합인가
 
-- `Modern Industrial Pack`은 400개 이상의 계단·플랫폼·비계·배관·덕트·케이블·조명 모듈을 제공하므로 화물역 구조와 소품을 한 제품군으로 구성할 수 있다.
-- FBX와 1K·2K·4K·8K 텍스처가 제공되지만 Unity 전용 패키지는 아니다. 무료 2K FBX를 기준으로 직접 URP 재질·콜라이더·프리팹을 구성한다.
+- `Sci-Fi Construction Kit (Modular)`은 벽·바닥·천장·통로·계단뿐 아니라 선반·상자·팔레트·배럴·환기 덕트·조명·배관·표지판을 함께 제공한다고 명시되어 있다. 기존 팩에 부족했던 닫힌 실내와 창고 밀도를 한 제품군으로 만들 수 있어 주환경으로 채택했다.
+- 공식 페이지에서 FREE, Standard Unity Asset Store EULA, 464.0MB, 버전 1.1.0을 확인했다. 원본 Unity 버전이 2018.4.21이고 2020년 이후 업데이트가 없으므로 Unity 6 URP 호환은 설명만으로 보장하지 않는다.
 - 환경, 총, 로봇 모두 현실적인 PBR 금속과 산업용 형태를 사용해 같은 조명에서 묶기 쉽다.
 - 주인공은 갑옷이 아닌 몸에 맞는 점프슈트를 입어 군인보다 현장 기술자로 읽힌다. 검정·차콜 의상은 산업 환경과 이미 가깝고, 주황 발광선을 청록 전력 표시로 바꾸면 게임의 색상 규칙과 연결된다.
 - 주인공 모델은 약 12.5k triangles이며 배포 설명에 리깅 모델과 비리깅 모델이 모두 포함된다고 명시되어 있다. 등 실루엣이 단순해 기존 산업 소품을 배터리 장치로 부착하기도 쉽다.
@@ -40,6 +40,7 @@
 
 | ID | 용도 | 링크 | 조건 |
 |---|---|---|---|
+| ENV-SUP-01 | 철골 발판·배관·케이블·조명 보조 | [Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack) | 무료 · Extended Use License. 설치됨. 완성형 실내 주환경으로는 부적합하며 새 주환경과 맞는 부품만 선별 |
 | ENV-02 | 팔레트·작업등·산업 소품 보강 | [Industrial Props Kit](https://assetstore.unity.com/packages/3d/props/industrial/industrial-props-kit-84745) | FREE · Unity EULA. ENV-01과 재질을 맞춘 소품만 선택 |
 | VFX-01 | 불꽃·폭발을 수정할 출발점 | [Particle Pack — Starter Assets](https://assetstore.unity.com/packages/vfx/particles/particle-pack-starter-assets-127325) | FREE · Unity EULA · Unity 6000.3 URP 호환 표기 |
 | ANIM-01 | 임시 캐릭터와 카메라 참고 | [First Person + Third Person Character Controllers](https://assetstore.unity.com/packages/3d/characters/first-person-third-person-character-controllers-196526) | FREE · Non-standard EULA. **완성 이동 코드는 복사하지 않고** 모델·애니메이션·카메라 비교용 |
@@ -48,7 +49,7 @@
 | LIGHT-02 | 화물역 외부 하늘 기준 | [Freight Station](https://polyhaven.com/a/freight_station) | CC0. 배경보다 Reflection Probe 기준으로 사용 |
 | SFX-01 | 기계·전기·금속·무기 소리 후보 | [Sonniss GDC 2026 Game Audio Bundle](https://gdc.sonniss.com/) · [라이선스](https://sonniss.com/gdc-bundle-license/) | 무료·상업 사용 가능·표기 불필요. 전체 7.47GB를 프로젝트에 넣지 말고 선택 파일만 사용 |
 
-`Flooded Grounds`, `Sci-Fi Styled Modular Pack`은 무료지만 주 조합에 넣지 않는다. 전자는 오래된 대형 도시 장면이라 화물역 실내와 재질 정리 비용이 크고, 후자는 깨끗한 SF 모듈 비중이 높아 “오래 사용한 공공 산업 시설”이라는 방향과 충돌한다.
+`Flooded Grounds`, `Sci-Fi Styled Modular Pack`은 무료지만 주 조합에 넣지 않는다. 전자는 오래된 대형 도시 장면이라 화물역 실내와 재질 정리 비용이 크고, 후자는 깨끗한 SF 모듈 비중이 높아 “오래 사용한 공공 산업 시설”이라는 방향과 충돌한다. 여기서 제외한 `Sci-Fi Styled Modular Pack`은 이번에 채택한 Sickhead Games의 `Sci-Fi Construction Kit (Modular)`와 다른 제품이다.
 
 ### 조사 후 제외한 주인공 후보
 
@@ -67,9 +68,9 @@
 ### 1단계 — 환경 한 개
 
 1. 프로젝트를 Git 커밋으로 깨끗하게 만든다.
-2. ProductionCrate에서 `ENV-01`의 무료 2K FBX 버전을 내려받고 새 테스트 장면에 import한다.
+2. Unity Asset Store에서 `ENV-01`을 내려받고 필요한 패키지만 새 테스트 장면에 import한다.
 3. 콘솔 오류, 분홍 재질, 1m 스케일, 콜라이더, 라이트맵 UV를 확인한다.
-4. 필요한 모델과 텍스처만 `Assets/ThirdParty/ProductionCrate/ModernIndustrialPack`에 둔다.
+4. 원본은 `Assets/ThirdParty/SickheadGames/SciFiConstructionKit`에 두고, 프로젝트용 재질과 Prefab Variant는 `Assets/BLACKOUT`에 둔다.
 5. 60fps와 빌드를 통과하면 환경을 임시 승인한다.
 
 ### 2단계 — 주인공과 애니메이션
@@ -101,6 +102,7 @@ BlackOut/Assets/
 │  ├─ UI
 │  └─ VFX
 └─ ThirdParty/
+   ├─ SickheadGames/SciFiConstructionKit
    ├─ ProductionCrate/ModernIndustrialPack
    ├─ Sketchfab/CreatorName/AssetName
    ├─ UnityTechnologies/ParticlePack
@@ -151,6 +153,7 @@ BlackOut/Assets/
 Sketchfab CC BY는 제작자와 원본 링크를 표시해야 한다. Unity Asset Store 에셋은 게임에 포함해 사용할 수 있지만 원본 파일을 별도 에셋처럼 재배포하면 안 된다. Mixamo는 Adobe ID로 무료이며 게임 사용이 가능하다. 자세한 근거는 다음 원문을 기준으로 한다.
 
 - [Unity Asset Store EULA](https://unity.com/legal/as-terms)
+- [Unity Asset Store — Sci-Fi Construction Kit (Modular)](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-construction-kit-modular-159280)
 - [ProductionCrate Modern Industrial Pack](https://www.productioncrate.com/objects/RenderCrate-Modern_Industrial_Pack)
 - [Sketchfab 다운로드 모델 표기 지침](https://sketchfab.com/developers/download-api/guidelines)
 - [Adobe Mixamo FAQ](https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html)
@@ -160,4 +163,4 @@ Sketchfab CC BY는 제작자와 원본 링크를 표시해야 한다. Unity Asse
 
 ## 8. 이번 주 실제 행동
 
-W02에는 외부 대형 에셋을 설치하지 않는다. 캡슐과 큐브로 이동·카메라·빌드를 먼저 끝낸다. W03 종료 후 `ENV-01`만 시험하고, W05 이전에 `CHR-01 + ENM-01 + BOSS-01`의 통일성 장면을 만들어 최종 조합을 확정한다.
+이번 주에는 `ENV-01`, `CHR-01`, `WPN-01`을 각각 격리 장면에서 확인한 뒤 TPS 이동·조준·기본 공격에 필요한 최소 구성만 플레이 장면에 넣는다. 환경은 완성 맵부터 만들지 말고 벽·바닥·천장·문·계단·통로·소품을 각각 1개 이상 써서 작은 창고 전투방을 만든다. `Modern Industrial Pack`은 새 환경과 같은 화면에서 어울리는 철골·배관 부품만 남긴다.

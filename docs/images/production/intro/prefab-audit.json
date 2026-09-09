@@ -1,0 +1,1041 @@
+{
+    "prefabs": [
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Floor/Floor Tile 01.prefab",
+            "guid": "cf8443763fc34314490f8a3e2f94dd37",
+            "center": {
+                "x": 3.0,
+                "y": -0.125,
+                "z": 2.999999523162842
+            },
+            "size": {
+                "x": 6.000001907348633,
+                "y": 0.25,
+                "z": 6.000000953674316
+            },
+            "min": {
+                "x": -9.5367431640625e-7,
+                "y": -0.25,
+                "z": -9.5367431640625e-7
+            },
+            "max": {
+                "x": 6.000000953674316,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 12,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Floor Tile Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Floor/Floor Tile 04.prefab",
+            "guid": "f9e1a0158e9f7a545a16fa7c2aa7be4e",
+            "center": {
+                "x": 3.0,
+                "y": -0.125,
+                "z": 2.999999523162842
+            },
+            "size": {
+                "x": 6.000001907348633,
+                "y": 0.25,
+                "z": 6.000000953674316
+            },
+            "min": {
+                "x": -9.5367431640625e-7,
+                "y": -0.25,
+                "z": -9.5367431640625e-7
+            },
+            "max": {
+                "x": 6.000000953674316,
+                "y": 0.0,
+                "z": 6.0
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 12,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Floor Tile Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Plain.prefab",
+            "guid": "b2452a5c2cd649a4db9eebcd16f7b155",
+            "center": {
+                "x": 2.980232238769531e-7,
+                "y": 4.00001335144043,
+                "z": 3.0
+            },
+            "size": {
+                "x": 0.30001208186149599,
+                "y": 9.999980926513672,
+                "z": 6.000005722045898
+            },
+            "min": {
+                "x": -0.1500057429075241,
+                "y": -0.9999771118164063,
+                "z": -0.00000286102294921875
+            },
+            "max": {
+                "x": 0.15000633895397187,
+                "y": 9.000003814697266,
+                "z": 6.000002861022949
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 44,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Corner.prefab",
+            "guid": "32467b8dc355cd04da356b17dbac4f29",
+            "center": {
+                "x": 2.9249942302703859,
+                "y": 3.9999873638153078,
+                "z": 2.9249980449676515
+            },
+            "size": {
+                "x": 6.150003910064697,
+                "y": 9.999979019165039,
+                "z": 6.150014400482178
+            },
+            "min": {
+                "x": -0.1500077247619629,
+                "y": -1.000002145767212,
+                "z": -0.1500091552734375
+            },
+            "max": {
+                "x": 5.999996185302734,
+                "y": 8.999977111816407,
+                "z": 6.00000524520874
+            },
+            "renderers": 1,
+            "colliders": 2,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 56,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall BayDoor.prefab",
+            "guid": "d324de115c4dff845bee7b7f166883c4",
+            "center": {
+                "x": 0.18666768074035645,
+                "y": 4.000013828277588,
+                "z": 3.000000476837158
+            },
+            "size": {
+                "x": 1.251790165901184,
+                "y": 9.999979972839356,
+                "z": 6.000005722045898
+            },
+            "min": {
+                "x": -0.4392274022102356,
+                "y": -0.9999761581420898,
+                "z": -0.000002384185791015625
+            },
+            "max": {
+                "x": 0.8125627636909485,
+                "y": 9.000003814697266,
+                "z": 6.000003337860107
+            },
+            "renderers": 3,
+            "colliders": 3,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 598,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Structure Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Bay Door Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Corridor.prefab",
+            "guid": "cd25cf3d7c6ff0e4cb4a7056c87c3ba9",
+            "center": {
+                "x": 4.842877388000488e-7,
+                "y": 4.499598026275635,
+                "z": 2.999924421310425
+            },
+            "size": {
+                "x": 0.30001169443130495,
+                "y": 9.000811576843262,
+                "z": 6.000156879425049
+            },
+            "min": {
+                "x": -0.15000537037849427,
+                "y": -0.0008077621459960938,
+                "z": -0.00015401840209960938
+            },
+            "max": {
+                "x": 0.15000632405281068,
+                "y": 9.000003814697266,
+                "z": 6.000002861022949
+            },
+            "renderers": 1,
+            "colliders": 3,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 160,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls Alpha.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Fan.prefab",
+            "guid": "0a65198f3cbcab345bc0b33f23a45e76",
+            "center": {
+                "x": -0.2383207082748413,
+                "y": 4.000014781951904,
+                "z": 3.000000238418579
+            },
+            "size": {
+                "x": 2.187530040740967,
+                "y": 9.999978065490723,
+                "z": 6.000007152557373
+            },
+            "min": {
+                "x": -1.3320857286453248,
+                "y": -0.999974250793457,
+                "z": -0.000003337860107421875
+            },
+            "max": {
+                "x": 0.8554443120956421,
+                "y": 9.000003814697266,
+                "z": 6.000003814697266
+            },
+            "renderers": 4,
+            "colliders": 3,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 562,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Fan Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Vent Trans Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Walls/Wall Window.prefab",
+            "guid": "1b890216c6645c648bfde4c7ba8f0b08",
+            "center": {
+                "x": -0.00007717311382293701,
+                "y": 4.000027179718018,
+                "z": 3.0000016689300539
+            },
+            "size": {
+                "x": 0.3000119924545288,
+                "y": 9.999953269958496,
+                "z": 6.000006198883057
+            },
+            "min": {
+                "x": -0.15008316934108735,
+                "y": -0.9999494552612305,
+                "z": -0.000001430511474609375
+            },
+            "max": {
+                "x": 0.14992882311344148,
+                "y": 9.000003814697266,
+                "z": 6.000004768371582
+            },
+            "renderers": 3,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 232,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Structure Trans Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Ceiling/Ceiling Closed.prefab",
+            "guid": "eb4b38db67a56dc469a2c2aafcc36add",
+            "center": {
+                "x": 3.0,
+                "y": -0.11400251090526581,
+                "z": 3.000000238418579
+            },
+            "size": {
+                "x": 6.000000953674316,
+                "y": 0.17199671268463136,
+                "z": 6.000000476837158
+            },
+            "min": {
+                "x": -4.76837158203125e-7,
+                "y": -0.20000086724758149,
+                "z": 0.0
+            },
+            "max": {
+                "x": 6.000000476837158,
+                "y": -0.028004154562950136,
+                "z": 6.000000476837158
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 12,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Ceiling Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Ceiling/Ceiling Skylight.prefab",
+            "guid": "407e4e65456601c4ba66e0697b1c325c",
+            "center": {
+                "x": 3.0,
+                "y": 0.021719306707382203,
+                "z": 2.9999992847442629
+            },
+            "size": {
+                "x": 6.000001907348633,
+                "y": 0.5116400718688965,
+                "z": 6.000002384185791
+            },
+            "min": {
+                "x": -9.5367431640625e-7,
+                "y": -0.23410072922706605,
+                "z": -0.0000019073486328125
+            },
+            "max": {
+                "x": 6.000000953674316,
+                "y": 0.27753934264183047,
+                "z": 6.000000476837158
+            },
+            "renderers": 2,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 124,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Ceiling Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Windows.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 01.prefab",
+            "guid": "324f2a5232c3ab4488fe817c9ea94b63",
+            "center": {
+                "x": -3.0310919284820558,
+                "y": 2.501570463180542,
+                "z": 0.0968095064163208
+            },
+            "size": {
+                "x": 6.272938251495361,
+                "y": 5.03031063079834,
+                "z": 1.9523735046386719
+            },
+            "min": {
+                "x": -6.167561054229736,
+                "y": -0.01358485221862793,
+                "z": -0.8793772459030151
+            },
+            "max": {
+                "x": 0.105377197265625,
+                "y": 5.016725540161133,
+                "z": 1.0729962587356568
+            },
+            "renderers": 36,
+            "colliders": 6,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 12156,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Shelf Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Shelf Trans Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Pallet Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Short Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Barrel Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Ducts Pillars Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Long Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Garbage Bin Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Shelves/Shelf Variation 03.prefab",
+            "guid": "78f2873840cccd046adee8782efa45fb",
+            "center": {
+                "x": -3.0310919284820558,
+                "y": 2.451763391494751,
+                "z": 0.0006985068321228027
+            },
+            "size": {
+                "x": 6.272938251495361,
+                "y": 4.930696487426758,
+                "z": 1.7434601783752442
+            },
+            "min": {
+                "x": -6.167561054229736,
+                "y": -0.01358485221862793,
+                "z": -0.8710315823554993
+            },
+            "max": {
+                "x": 0.105377197265625,
+                "y": 4.917111396789551,
+                "z": 0.8724285960197449
+            },
+            "renderers": 50,
+            "colliders": 52,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 14384,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Shelf Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Shelf Trans Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Pallet Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Long Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Short Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Barrel Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 02.prefab",
+            "guid": "1a91b66dee996324fa51df60c547b29d",
+            "center": {
+                "x": 0.8082097768783569,
+                "y": 0.6908301115036011,
+                "z": 0.756713330745697
+            },
+            "size": {
+                "x": 1.6228961944580079,
+                "y": 1.3816602230072022,
+                "z": 1.5239611864089966
+            },
+            "min": {
+                "x": -0.0032383203506469728,
+                "y": 0.0,
+                "z": -0.0052672624588012699
+            },
+            "max": {
+                "x": 1.6196578741073609,
+                "y": 1.3816602230072022,
+                "z": 1.5186939239501954
+            },
+            "renderers": 4,
+            "colliders": 4,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 1376,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Pallet Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Long Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Short Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Barrel Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Pallet Variations/Pallet Variation 05.prefab",
+            "guid": "d96e3ff0793bd824fb6771e987a80a35",
+            "center": {
+                "x": 0.7578402757644653,
+                "y": 0.7066184878349304,
+                "z": 0.757652759552002
+            },
+            "size": {
+                "x": 1.639631986618042,
+                "y": 1.4132369756698609,
+                "z": 1.5258400440216065
+            },
+            "min": {
+                "x": -0.061975717544555667,
+                "y": 0.0,
+                "z": -0.0052672624588012699
+            },
+            "max": {
+                "x": 1.5776562690734864,
+                "y": 1.4132369756698609,
+                "z": 1.5205727815628052
+            },
+            "renderers": 4,
+            "colliders": 4,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 1684,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Pallet Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Barrel Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Long Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Crate Long.prefab",
+            "guid": "e2fdcaac11701fe438724a8a8b3a76c5",
+            "center": {
+                "x": 0.3200432360172272,
+                "y": 0.2998649477958679,
+                "z": 0.6372068524360657
+            },
+            "size": {
+                "x": 0.640339195728302,
+                "y": 0.5997215509414673,
+                "z": 1.2744108438491822
+            },
+            "min": {
+                "x": -0.00012636184692382813,
+                "y": 0.000004172325134277344,
+                "z": 0.000001430511474609375
+            },
+            "max": {
+                "x": 0.6402128338813782,
+                "y": 0.5997257232666016,
+                "z": 1.2744122743606568
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 300,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Crate Long Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Crates Barrels Pallets/Barrel.prefab",
+            "guid": "1e3974e3db8c48c41b2604d2478e7e9e",
+            "center": {
+                "x": 0.0002563297748565674,
+                "y": 0.612618625164032,
+                "z": -0.01534174382686615
+            },
+            "size": {
+                "x": 0.8806330561637878,
+                "y": 1.225237250328064,
+                "z": 0.8806329965591431
+            },
+            "min": {
+                "x": -0.44006019830703738,
+                "y": 0.0,
+                "z": -0.4556582570075989
+            },
+            "max": {
+                "x": 0.4405728578567505,
+                "y": 1.225237250328064,
+                "z": 0.4249747395515442
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 496,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Barrel Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Cart.prefab",
+            "guid": "126b2c575cf932341a8f0414ccd5b254",
+            "center": {
+                "x": -0.08513617515563965,
+                "y": 0.4993497133255005,
+                "z": 8.940696716308594e-7
+            },
+            "size": {
+                "x": 1.3987715244293213,
+                "y": 0.9993455410003662,
+                "z": 0.973897397518158
+            },
+            "min": {
+                "x": -0.7845219373703003,
+                "y": -0.0003230571746826172,
+                "z": -0.48694780468940737
+            },
+            "max": {
+                "x": 0.614249587059021,
+                "y": 0.9990224838256836,
+                "z": 0.4869495928287506
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 1,
+            "triangles": 610,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Cart Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Ducts/Duct Straight.prefab",
+            "guid": "047cc399d5f561b48902e8632947324a",
+            "center": {
+                "x": 1.7881393432617188e-7,
+                "y": 0.4313177466392517,
+                "z": 2.999997138977051
+            },
+            "size": {
+                "x": 0.6706122159957886,
+                "y": 1.5373655557632447,
+                "z": 6.000006675720215
+            },
+            "min": {
+                "x": -0.33530592918395998,
+                "y": -0.3373650312423706,
+                "z": -0.000006198883056640625
+            },
+            "max": {
+                "x": 0.3353062868118286,
+                "y": 1.200000524520874,
+                "z": 6.000000476837158
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 184,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Ducts Pillars Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Structure Props/Fusebox 01.prefab",
+            "guid": "3c19fd38539b7f04b90d35983ebc23cc",
+            "center": {
+                "x": 0.23643361032009126,
+                "y": 0.185793936252594,
+                "z": 0.07578127086162567
+            },
+            "size": {
+                "x": 0.18434962630271913,
+                "y": 2.2440738677978517,
+                "z": 0.640572190284729
+            },
+            "min": {
+                "x": 0.1442587971687317,
+                "y": -0.9362429976463318,
+                "z": -0.24450482428073884
+            },
+            "max": {
+                "x": 0.3286084234714508,
+                "y": 1.307830810546875,
+                "z": 0.39606738090515139
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 440,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Structure Props Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Hanging Light.prefab",
+            "guid": "9f50fdb071f54674f8166b46f510ad84",
+            "center": {
+                "x": -0.000007212162017822266,
+                "y": -0.47599413990974429,
+                "z": 2.9802322387695315e-8
+            },
+            "size": {
+                "x": 0.5468259453773499,
+                "y": 0.9519882798194885,
+                "z": 0.5989070534706116
+            },
+            "min": {
+                "x": -0.27342018485069277,
+                "y": -0.9519882798194885,
+                "z": -0.2994534969329834
+            },
+            "max": {
+                "x": 0.2734057605266571,
+                "y": 0.0,
+                "z": 0.2994535565376282
+            },
+            "renderers": 2,
+            "colliders": 0,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 700,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Light Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Light Fixture Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Props/Misc Props/Wall Light.prefab",
+            "guid": "30023cc824132bd4bb6a2cd831be15ba",
+            "center": {
+                "x": 0.23680923879146577,
+                "y": 1.1920928955078126e-7,
+                "z": 2.9802322387695315e-8
+            },
+            "size": {
+                "x": 0.17371270060539246,
+                "y": 0.7292864918708801,
+                "z": 0.7534912824630737
+            },
+            "min": {
+                "x": 0.14995288848876954,
+                "y": -0.3646431267261505,
+                "z": -0.3767456114292145
+            },
+            "max": {
+                "x": 0.323665589094162,
+                "y": 0.3646433651447296,
+                "z": 0.37674567103385928
+            },
+            "renderers": 2,
+            "colliders": 0,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 106,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Light Fixture Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Light Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Long Rails.prefab",
+            "guid": "207f61281715ab24f9899fdfa960ca48",
+            "center": {
+                "x": 1.0569875240325928,
+                "y": 2.7306628227233888,
+                "z": 3.0000252723693849
+            },
+            "size": {
+                "x": 2.113987445831299,
+                "y": 5.461325645446777,
+                "z": 6.00004768371582
+            },
+            "min": {
+                "x": -0.000006198883056640625,
+                "y": 0.0,
+                "z": 0.000001430511474609375
+            },
+            "max": {
+                "x": 2.113981246948242,
+                "y": 5.461325645446777,
+                "z": 6.000049114227295
+            },
+            "renderers": 1,
+            "colliders": 3,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 742,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Catwalk Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Short Stairs Wide.prefab",
+            "guid": "7e3f523375a441341abd337ac986d569",
+            "center": {
+                "x": 0.9558392763137817,
+                "y": 0.6383512616157532,
+                "z": 3.0047974586486818
+            },
+            "size": {
+                "x": 1.7922194004058838,
+                "y": 1.2767302989959717,
+                "z": 3.910226821899414
+            },
+            "min": {
+                "x": 0.059729576110839847,
+                "y": -0.000013887882232666016,
+                "z": 1.0496840476989747
+            },
+            "max": {
+                "x": 1.8519489765167237,
+                "y": 1.2767164707183838,
+                "z": 4.959910869598389
+            },
+            "renderers": 2,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 270,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Stairs Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Stairs Trans Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Pillars and Beams/Pillar.prefab",
+            "guid": "811bf22db94faad418fb6fdfffe14569",
+            "center": {
+                "x": -1.7881393432617188e-7,
+                "y": 4.500390529632568,
+                "z": 5.140900611877441e-7
+            },
+            "size": {
+                "x": 0.4330129623413086,
+                "y": 8.999220848083496,
+                "z": 0.43953782320022585
+            },
+            "min": {
+                "x": -0.21650665998458863,
+                "y": 0.0007801055908203125,
+                "z": -0.21976840496063233
+            },
+            "max": {
+                "x": 0.21650630235671998,
+                "y": 9.000000953674317,
+                "z": 0.2197694182395935
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 46,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Ducts Pillars Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Corridors/Corridor Passthrough.prefab",
+            "guid": "c4470bf28fca8044dab507d047e88c69",
+            "center": {
+                "x": 3.0000100135803224,
+                "y": 1.9000139236450196,
+                "z": 2.999995231628418
+            },
+            "size": {
+                "x": 6.300002098083496,
+                "y": 5.799975395202637,
+                "z": 6.000001907348633
+            },
+            "min": {
+                "x": -0.14999103546142579,
+                "y": -0.9999737739562988,
+                "z": -0.0000057220458984375
+            },
+            "max": {
+                "x": 6.15001106262207,
+                "y": 4.800001621246338,
+                "z": 5.999996185302734
+            },
+            "renderers": 5,
+            "colliders": 4,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 420,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Walls.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Ceiling Mat.mat",
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Floor Tile Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Long.prefab",
+            "guid": "b76f846b3379607468a593969b575654",
+            "center": {
+                "x": 0.9999971985816956,
+                "y": 4.261471271514893,
+                "z": 2.9999964237213136
+            },
+            "size": {
+                "x": 2.0000076293945314,
+                "y": 0.47708892822265627,
+                "z": 6.000046253204346
+            },
+            "min": {
+                "x": -0.000006616115570068359,
+                "y": 4.0229268074035648,
+                "z": -0.000026702880859375
+            },
+            "max": {
+                "x": 2.0000009536743166,
+                "y": 4.500015735626221,
+                "z": 6.000019550323486
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 548,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Catwalk Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Catwalk/Catwalk Rails Long.prefab",
+            "guid": "4e661a4b9cf2fac4dbc610ceb59e77b8",
+            "center": {
+                "x": 1.9999215602874756,
+                "y": 5.149565696716309,
+                "z": -0.014062333852052689
+            },
+            "size": {
+                "x": 4.000641345977783,
+                "y": 0.6235208511352539,
+                "z": 0.11945097893476486
+            },
+            "min": {
+                "x": -0.0003991127014160156,
+                "y": 4.837805271148682,
+                "z": -0.07378782331943512
+            },
+            "max": {
+                "x": 4.000242233276367,
+                "y": 5.4613261222839359,
+                "z": 0.04566315561532974
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 56,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Catwalk Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        },
+        {
+            "path": "Assets/ThirdParty/SciFi Warehouse Kit/Prefabs/Structures/Pillars and Beams/Ceiling Support.prefab",
+            "guid": "56553c59a52bf504aaac866c7f4030cd",
+            "center": {
+                "x": 2.9998879432678224,
+                "y": -0.19999951124191285,
+                "z": 2.7939677238464358e-7
+            },
+            "size": {
+                "x": 6.000261306762695,
+                "y": 0.6000009775161743,
+                "z": 0.14744028449058534
+            },
+            "min": {
+                "x": -0.00024271011352539063,
+                "y": -0.5,
+                "z": -0.07371985912322998
+            },
+            "max": {
+                "x": 6.00001859664917,
+                "y": 0.10000097751617432,
+                "z": 0.07372042536735535
+            },
+            "renderers": 1,
+            "colliders": 1,
+            "lights": 0,
+            "rigidbodies": 0,
+            "triangles": 180,
+            "materials": [
+                "Assets/ThirdParty/SciFi Warehouse Kit/Art/Materials/Structure Props Mat.mat"
+            ],
+            "shaders": [
+                "Universal Render Pipeline/Lit"
+            ],
+            "scripts": []
+        }
+    ]
+}
