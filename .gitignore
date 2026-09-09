@@ -1,0 +1,40 @@
+# Unity-generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity editor and IDE files
+.vs/
+.vscode/
+*.vsconfig
+*.csproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Unity generated metadata and crash reports
+sysinfo.txt
+*.stacktrace
+*.unityproj
+
+# Asset Store tools and packages generated locally
+/[Aa]ssets/AssetStoreTools*
+
+# Locally stored source archives for imported third-party assets
+/BlackOut/ThirdParty/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
