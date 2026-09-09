@@ -1,0 +1,8 @@
+# Local game-planning documents (including future versions).
+BLACKOUT_*기획서*.md
+BLACKOUT_*아트_바이블*.md
+/art-bible/
+
+# Supporting drafts and recommendations for the final game design.
+/output/blackout-final-*/design-draft.md
+/output/blackout-final-*/content-recommendations.md
