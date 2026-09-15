@@ -34,6 +34,9 @@ sysinfo.txt
 # Locally stored source archives for imported third-party assets
 /BlackOut/ThirdParty/
 
+# Local Unity exercise project
+/Exercise/
+
 # OS files
 .DS_Store
 Thumbs.db
