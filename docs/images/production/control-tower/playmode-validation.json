@@ -1,0 +1,20 @@
+{
+    "isPlaying": true,
+    "controllerClimbedStair": true,
+    "controllerCompletedArenaLoop": true,
+    "reflectionPersisted": true,
+    "stateLinks": true,
+    "arrivalEnd": {
+        "x": 111.9749984741211,
+        "y": 6.035000324249268,
+        "z": 27.0
+    },
+    "loopEnd": {
+        "x": 112.0,
+        "y": 6.034999847412109,
+        "z": 27.0
+    },
+    "missingMaterials": 0,
+    "issues": [],
+    "note": "Temporary native CharacterController smoke test, not the project's playable character or boss combat."
+}

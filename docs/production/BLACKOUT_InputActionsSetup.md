@@ -1,12 +1,17 @@
+---
+_width: wide
+---
 # BLACKOUT — Input Actions 설정 따라 하기
 
 이 문서는 키보드와 마우스의 조작을 BLACKOUT 게임의 행동으로 연결하는 Unity 설정 가이드다. 코드부터 작성하지 않는다. 먼저 `WASD = 이동`, 마우스 이동 = 시선, 클릭 = 발사처럼 입력표를 정확히 만든 뒤, 다음 단계에서 `PlayerInputReader`가 이 입력표를 읽는다.
 
 > 대상: Unity 6000.3.22f1 · Input System 1.20.0  
 > 연결 문서: [TPS 플레이어 이동·조준·펄스 발사 구현 가이드](BLACKOUT_TPSPlayerMovementAndPulseFire.md)  
-> 현재 확인: `Assets/BLACKOUT/Settings/New Actions.inputactions`가 이미 생성되어 있다. 이 파일을 새로 만들지 말고 이름을 바꿔 이어서 설정한다.
+> 현재 확인: `Assets/BLACKOUT/Settings/BlackoutInputActions.inputactions`와 자동 생성된 `BlackoutInputActions.cs`가 있다. 입력 에셋 설정을 마친 뒤 Reader 구현 문서로 이어진다.
 
 ## 1. 먼저 이해할 세 단어
+
+설정이 끝나면 [T01 입력 검증](implementation/01-input.md)에서 현재 코드의 한 번 요청·조준 유지·포커스 처리를 확인한다. 이후 단계는 [전체 구현 태스크](implementation/README.md)에 연결되어 있다.
 
 | 이름 | 쉬운 뜻 | BLACKOUT 예시 |
 |---|---|---|
@@ -51,13 +56,13 @@ A: (-1,  0)     D: ( 1,  0)
 
 ### 3.1 기존 파일을 사용한다
 
-Project 창에서 다음 파일을 찾는다.
+Project 창에서 다음 파일을 찾는다. 현재 이름이 이미 아래와 같으면 이름을 다시 바꾸지 않는다.
 
 ```text
-Assets/BLACKOUT/Settings/New Actions.inputactions
+Assets/BLACKOUT/Settings/BlackoutInputActions.inputactions
 ```
 
-파일을 선택하고 `F2` 또는 마우스 오른쪽 버튼의 Rename으로 아래 이름으로 바꾼다.
+이 파일이 아직 `New Actions.inputactions`라면, 파일을 선택하고 `F2` 또는 마우스 오른쪽 버튼의 Rename으로 아래 이름으로 바꾼다.
 
 ```text
 BlackoutInputActions.inputactions
@@ -335,4 +340,4 @@ CharacterController가 실제 이동
 | 생성된 C# 파일이 안 보인다 | Generate C# Class 적용 전 | Input Actions Asset Inspector에서 체크 후 Apply를 누른다 |
 | 같은 Action이 두 번 실행된다 | 이후 코드에서 입력 콜백을 중복 구독함 | `OnEnable` 구독과 `OnDisable` 해제를 대칭으로 확인한다 |
 
-입력 설정을 끝냈다면 다음 문서의 [입력 Reader 구조](BLACKOUT_TPSPlayerMovementAndPulseFire.md#72-입력-reader의-최소-형태)로 넘어가 `PlayerInputReader`를 구현한다. 이때부터 설정 파일의 입력값이 실제 TPS 이동과 펄스 발사로 연결된다.
+입력 설정을 끝냈다면 [PlayerInputReader 구현 가이드](BLACKOUT_PlayerInputReader_Implementation.md)로 넘어간다. 이때부터 설정 파일의 입력값이 실제 TPS 이동과 펄스 발사로 연결된다.

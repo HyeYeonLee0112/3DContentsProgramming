@@ -1,0 +1,10 @@
+{
+    "checkedUtc": "2026-09-30T08:08:29.5751407Z",
+    "materials": 48,
+    "textureMaps": 15,
+    "dryFloorTiles": 53,
+    "dampFloorTiles": 7,
+    "bakedProbes": 3,
+    "issues": [],
+    "performanceVerified": false
+}

@@ -1,0 +1,18 @@
+{
+    "scene": "Assets/BLACKOUT/Scenes/Levels/CargoStation.unity",
+    "checkedUtc": "2026-09-30T08:08:29.5866828Z",
+    "routeOpen": true,
+    "blackoutBlocksGate": true,
+    "poweredOpensGate": true,
+    "powerSocketReachable": true,
+    "recoveryPocketReachable": true,
+    "missingScripts": 0,
+    "missingMaterials": 0,
+    "unsupportedShaders": 0,
+    "activeRenderers": 1032,
+    "activeColliders": 559,
+    "lights": 16,
+    "shadowLights": 5,
+    "issues": [],
+    "note": "Environment-only QA. Capsule sweep radius 0.4 m, height 1.9 m. No claim of combat, navigation AI, power inventory or 60fps performance verification."
+}

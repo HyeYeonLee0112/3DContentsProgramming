@@ -1,0 +1,5 @@
+Concrete: size=1024x1024; baseColor opposite-edge max difference=0.000000
+CoatedSteel: size=1024x1024; baseColor opposite-edge max difference=0.000000
+DampConcrete: size=1024x1024; baseColor opposite-edge max difference=0.000000
+BrushedSteel: size=1024x1024; baseColor opposite-edge max difference=0.000001
+GalvanizedSteel: size=1024x1024; baseColor opposite-edge max difference=0.000000

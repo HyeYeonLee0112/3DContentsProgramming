@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15",
+  "status": "environment_reviewed_gameplay_pending",
+  "brief": "docs/art-direction/BLACKOUT_ArtBible.md",
+  "requirements": "docs/planning/BLACKOUT_PRD.md",
+  "technical_frame": {
+    "engine": "Unity 6000.3.22f1 / URP",
+    "platform": "Windows PC",
+    "scale": "1 unit = 1 metre",
+    "camera": "TPS, 1920x1080 review",
+    "arena": "36 x 36 m, floor +6 m, 12 m clear height",
+    "palette": ["#171B1F", "#343B40", "#6B6E6A", "#D18A24", "#67D5E7", "#C43A35"],
+    "target_fps": 60,
+    "performance_verified": false
+  },
+  "visual_target": "Existing cargo material pass; elevated industrial control hall, framed night-city vista, central cooling machinery, generous combat lanes. Not a neon spaceship.",
+  "delivered_assets": ["04_FreightLiftArrival", "05_ControlTower", "CoolingUnit_TwoCell prefab", "Worklight circuits and linked turret scene groups", "GridRestorationConsole prefab", "19 Korean labels", "Boss and interaction anchors", "blackout/powered/cooling/restored preview states"],
+  "paths": {
+    "scene": "BlackOut/Assets/BLACKOUT/Scenes/Levels/CargoStation.unity",
+    "prefabs": "BlackOut/Assets/BLACKOUT/Prefabs/Environment/ControlTower",
+    "materials": "BlackOut/Assets/BLACKOUT/Art/Materials/ControlTower",
+    "meshes_reflection_volume": "BlackOut/Assets/BLACKOUT/Art/ControlTower",
+    "workflow": "docs/production/BLACKOUT_ControlTower_Workflow.md",
+    "screenshots": "docs/images/production/control-tower"
+  },
+  "verification": {
+    "in_engine_reviewed": true,
+    "native_scale_reviewed": true,
+    "capsule_radius_m": 0.4,
+    "capsule_height_m": 1.9,
+    "play_mode_character_controller_stair_and_loop": true,
+    "saved_scene_reopened": true,
+    "environment_report": "docs/images/production/control-tower/validation.json",
+    "play_report": "docs/images/production/control-tower/playmode-validation.json",
+    "approval": "Agent environment review only. Gameplay integration, target hardware profiling and final human approval pending."
+  },
+  "provenance": [
+    {"source": "Existing SciFi Warehouse Kit", "path": "BlackOut/Assets/ThirdParty/SciFi Warehouse Kit", "use": "floors, walls and structure modules", "license": "Retains original project asset terms; raw redistribution not newly authorized", "license_reverified_this_task": false},
+    {"source": "Project-authored CargoStation material family", "record": "docs/assets/BLACKOUT_CargoMaterials_Manifest.json", "use": "shared 1K PBR textures, steel, concrete, worn paint"},
+    {"source": "Pretendard SemiBold", "path": "BlackOut/Assets/BLACKOUT/UI/Fonts/Pretendard", "license": "SIL OFL 1.1; existing bundled license retained"},
+    {"source": "New Unity C# geometry and composition", "creator": "Authored for BLACKOUT in this task", "use": "cooling device, control console, socket cabinets, stairs, industrial trim, skyline", "tool": "Unity Editor APIs through Unity CLI", "license": "Project-authored geometry/code"}
+  ],
+  "not_in_scope": ["Boss AI and damage", "Energy inventory and spending", "Timed weakpoint gameplay", "Functional freight lift", "Checkpoint persistence", "Shipping performance approval"]
+}

@@ -40,6 +40,8 @@ flowchart LR
 ## 문서
 
 - [전체 문서 구조와 안내](docs/README.md)
+- [BLACKOUT 기술 설계](docs/production/BLACKOUT_TechnicalDesign.md) — 구조·책임·상태 소유권·의존 관계·대안
+- [구현 태스크와 단계별 따라하기](docs/production/implementation/README.md) — 42개 태스크의 MD 유무·내용 점검·구현 검증 상태, T00~T08 상세 실습
 - [게임 기획서](docs/planning/BLACKOUT_PRD.md)
 - [아트 바이블](docs/art-direction/BLACKOUT_ArtBible.md)
 - [폰트·타이포그래피 가이드](docs/art-direction/BLACKOUT_Typography.md)

@@ -4,11 +4,15 @@
 
 이 문서는 BLACKOUT의 W02에서 이동·점프·TPS 카메라·조준·기본 펄스 발사를 처음 연결하기 위한 혼합형 문서다. 최소 동작부터 시작하지만, 이후 애니메이션·피격·전력·적 AI·체크포인트를 붙일 수 있는 방향으로 설계한다.
 
+전체 구조의 최신 통합 기준은 [BLACKOUT 기술 설계 v0.1](BLACKOUT_TechnicalDesign.md)이다. 현재 상세 절차는 [T00~T08 따라하기와 문서 상태](implementation/README.md)다. T05부터 Controller.LateUpdate가 CameraRig.LateTick을 호출하고 T07은 그 뒤 발사한다. 아래 개념 안내보다 실습의 정확한 멤버·호출 계약을 우선한다. 초기 실습과 이후 Driver·GameSession 연결 차이는 [통합 변경 표](BLACKOUT_TechnicalDesign.md#migration)를 확인한다.
+
 > 대상: Unity 6000.3.22f1 · URP 17.3.0 · Windows PC  
 > 현재 상태: Input System 1.20.0은 설치되어 있으나, 프로젝트의 `Player.cs`에는 아직 동작이 구현되어 있지 않다. Cinemachine은 현재 직접 의존성에 없다.  
 > 이 문서의 상태: 구현 계획과 학습 가이드. 아래 코드·수치는 아직 프로젝트에 적용된 결과가 아니다.
 
 ## 1. 이번 구현의 목표
+
+실제 작성 순서는 [구현 태스크와 따라하기](implementation/README.md)의 T00~T11을 따른다. 이 문서는 전체 설계 설명이고, 세부 태스크 문서는 현재 코드에서 시작할 멤버 계약·TODO·Inspector 연결·검증 순서를 제공한다. 이후 전력·AI·복원·보스 작업도 같은 목록에 이어진다.
 
 ### 플레이어가 확인할 결과
 
@@ -86,7 +90,7 @@ flowchart LR
 4. `PlayerMotor`가 카메라 수평 방향을 기준으로 이동·중력·점프를 계산한다.
 5. `PlayerFacing`이 비조준 때는 이동 방향, 조준 때는 카메라 수평 방향을 향해 캐릭터 몸을 돌린다.
 6. `PulseGun`이 눌림 요청·재사용 시간·제어 권한을 검사한다. 발사 가능하면 카메라 목표와 총구 경로를 계산해 발사체에 넘긴다.
-7. 카메라 실제 위치와 벽 충돌 보정은 `LateUpdate`에서 수행한다. 발사체의 일정 속도 이동·충돌 검사는 `FixedUpdate`에서 수행한다.
+7. 카메라 실제 위치·벽 충돌 보정은 Controller.LateUpdate가 호출한 CameraRig.LateTick에서 수행하고, 저장한 발사 요청은 그 뒤 최종 Ray로 확정한다. 발사체의 일정 속도 이동·충돌 검사는 `FixedUpdate`에서 수행한다.
 
 `PlayerController`는 직접 이동량을 계산하거나 탄환을 만들지 않는다. 이 컴포넌트의 일은 **호출 순서를 읽기 좋게 한곳에 적는 것**이다. 이 정도의 조정자는 실무에서 흔히 쓰는 Composition Root 또는 Facade와 비슷한 역할을 한다.
 
@@ -174,7 +178,7 @@ Main Camera
 
 ## 7. 입력 설계: 장치를 읽지 말고 의도를 읽는다
 
-Unity Input Actions Editor에서 `Gameplay` Map과 Move·Look·Jump·Aim·Fire·Interact를 실제로 만드는 클릭 순서는 [Input Actions 설정 따라 하기](BLACKOUT_InputActionsSetup.md)에 정리했다. 먼저 이 설정을 마친 뒤 아래 Reader 구조를 구현한다.
+Unity Input Actions Editor에서 `Gameplay` Map과 Move·Look·Jump·Aim·Fire·Interact를 실제로 만드는 클릭 순서는 [Input Actions 설정 따라 하기](BLACKOUT_InputActionsSetup.md)에 정리했다. 설정이 끝나면 [PlayerInputReader 구현 가이드](BLACKOUT_PlayerInputReader_Implementation.md)에서 입력값을 안전하게 읽고 한 프레임 입력 묶음으로 전달하는 구조를 구현한다.
 
 ### 7.1 `BlackoutInputActions` 권장 구성
 
@@ -191,6 +195,8 @@ Unity Input Actions Editor에서 `Gameplay` Map과 Move·Look·Jump·Aim·Fire·
 `Move`는 2D Vector Composite를 사용한다. 대각선 입력은 `(1, 1)`처럼 길이가 1보다 커질 수 있으므로, `PlayerMotor`에서 크기를 최대 1로 제한한다. 입력 에셋의 값만 믿고 속도를 곱하면 대각선이 약 1.41배 빨라질 수 있다.
 
 ### 7.2 입력 Reader의 최소 형태
+
+아래는 책임의 모양을 짧게 보여 주는 예시다. 현재 생성된 `BlackoutInputActions`와 맞는 전체 코드·수명 관리·테스트 절차는 [PlayerInputReader 구현 가이드](BLACKOUT_PlayerInputReader_Implementation.md)를 따른다.
 
 아래 구조는 완성 코드가 아니라 책임의 모양이다. 생성된 입력 클래스의 정확한 이름은 실제 `.inputactions` 파일을 만든 뒤 결정한다.
 

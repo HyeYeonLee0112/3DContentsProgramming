@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "art_direction_brief": "docs/art-direction/BLACKOUT_ArtBible.md",
+  "created_at": "2026-09-30",
+  "current_material_pass": "docs/assets/BLACKOUT_CargoMaterials_Manifest.json",
+  "technical_frame": {
+    "engine": "Unity 6000.3.22f1 / URP 17.3.0",
+    "world_scale": "1 unit = 1 metre",
+    "view": "3D TPS environment, eye-height camera review",
+    "native_review_resolution": "1920x1080",
+    "platform": "Windows PC",
+    "target_fps": 60,
+    "performance_verified": false,
+    "palette": ["#171B1F", "#343B40", "#6B6E6A", "#D18A24", "#67D5E7", "#C43A35"]
+  },
+  "approval_note": "Agent-reviewed environment art and collision pass; no shipping approval, combat integration or performance certification.",
+  "assets": [
+    {
+      "id": "CARGO-CONTAINER-FAMILY",
+      "role": "corridor screening, cover, stacked cargo",
+      "paths": [
+        "BlackOut/Assets/BLACKOUT/Prefabs/Environment/CargoStation/Container40ft_Ochre.prefab",
+        "BlackOut/Assets/BLACKOUT/Prefabs/Environment/CargoStation/Container40ft_Blue.prefab",
+        "BlackOut/Assets/BLACKOUT/Prefabs/Environment/CargoStation/Container40ft_Oxide.prefab"
+      ],
+      "status": "environment_reviewed",
+      "technical": {"hull_m": [12.19, 2.6, 2.44], "pivot": "bottom-centre", "scale": [1, 1, 1], "collision": "one box per container hull; ribs and labels non-colliding", "alpha": false, "lod": "not authored"},
+      "visual_locks": ["40-foot proportions", "industrial muted paint", "corrugated steel", "ISO-style corner castings", "Pretendard Korean labels; Barlow Condensed equipment IDs"],
+      "source": {"kind": "authored", "url_or_tool": "Unity mesh primitives and CombineMeshes via BlackoutCargoBuilder / BlackoutCargoRefinement", "creator": "Authored for BLACKOUT in this task", "license": "Project-authored geometry; Barlow Condensed remains SIL OFL 1.1", "prompt_or_source_record": "docs/production/BLACKOUT_CargoStation_Workflow.md"},
+      "verification": {"native_scale_reviewed": true, "in_engine_reviewed": true, "technical_checks_passed": "material/reference and capsule-path checks only", "approved_by": "agent visual review; final production approval pending"}
+    },
+    {
+      "id": "CARGO-SECURITY-GATE",
+      "role": "security checkpoint, linked door and turret visual states",
+      "path": "BlackOut/Assets/BLACKOUT/Prefabs/Environment/CargoStation/SecurityGate_PowerLinked.prefab",
+      "status": "environment_reviewed",
+      "technical": {"clear_opening_m": [6, 4.35], "pivot": "gate threshold centre at floor", "collision": "box colliders on leaves, frame, cabinet and pockets", "states": ["blackout: closed, turret indicators off", "powered: leaves moved 3.05 m each, turret warning on"], "animation": "instant preview only", "combat": false, "lod": "not authored"},
+      "visual_locks": ["mechanical sliding door", "shared conduit to socket and turret", "ochre safety edges", "cyan power and red danger"],
+      "source": {"kind": "authored", "url_or_tool": "Unity editor C# authoring", "creator": "Authored for BLACKOUT in this task", "license": "Project-authored geometry and code; font remains SIL OFL 1.1"},
+      "verification": {"native_scale_reviewed": true, "in_engine_reviewed": true, "technical_checks_passed": "closed/open collision and state visibility", "approved_by": "agent visual review; gameplay integration pending"}
+    },
+    {
+      "id": "CARGO-WEATHERED-COATING",
+      "role": "shared coating variation, grime and chips",
+      "path": "BlackOut/Assets/BLACKOUT/Art/CargoStation/Textures/WeatheredCoating.png",
+      "status": "superseded_for_cargo_scene_by_CargoMaterials_pass; retained_for_history",
+      "technical": {"dimensions": "512x512", "alpha": false, "color_space": "sRGB", "filtering": "bilinear, mipmaps", "wrapping": "repeat", "source": "deterministic multiscale noise; not a photographed material scan"},
+      "source": {"kind": "authored-procedural", "url_or_tool": "BlackoutCargoRefinement.WeatherPaint", "creator": "Authored for BLACKOUT", "license": "Project-authored"},
+      "verification": {"native_scale_reviewed": true, "in_engine_reviewed": true, "technical_checks_passed": "imported and inspected on container and gate surfaces", "approved_by": "agent visual review"}
+    },
+    {
+      "id": "CARGO-SIGN-SHADER",
+      "role": "readable world-space labels without seeing text through walls",
+      "path": "BlackOut/Assets/BLACKOUT/Art/CargoStation/DepthTestedSign.shader",
+      "status": "environment_reviewed",
+      "technical": {"pipeline": "URP", "alpha": true, "depth_test": "LEqual", "depth_write": false, "font_dependency": "existing Pretendard SemiBold TTF for Korean, Barlow Condensed SemiBold for equipment IDs; source licenses beside fonts"},
+      "source": {"kind": "authored", "url_or_tool": "Project-authored HLSL", "creator": "Authored for BLACKOUT", "license": "Project-authored shader; font SIL OFL 1.1"},
+      "verification": {"native_scale_reviewed": true, "in_engine_reviewed": true, "technical_checks_passed": "depth occlusion, scene reload and Play Mode", "approved_by": "agent visual review"}
+    },
+    {
+      "id": "CARGO-EXISTING-KIT",
+      "role": "warehouse walls, floor, ceiling, lamps, props and service gallery",
+      "path": "BlackOut/Assets/ThirdParty/SciFi Warehouse Kit",
+      "status": "reused_existing",
+      "technical": {"modules": "6 m floor grid, 9 m wall height", "collision": "source colliders; gate overhead crossing replaced with deck-only collision", "material_edits": "project copies only under Art/CargoStation/Materials"},
+      "source": {"kind": "existing-project-assets", "url_or_tool": "Existing SciFi Warehouse Kit and Intro.prefab", "creator": "See existing BLACKOUT_AssetManifest.json ENV-01 and original package", "license": "Retains original third-party terms; do not redistribute raw package files", "license_reverified_this_task": false},
+      "verification": {"native_scale_reviewed": true, "in_engine_reviewed": true, "technical_checks_passed": "used references and selected traversable paths; not a full package audit", "approved_by": "environment review only"}
+    },
+    {
+      "id": "CARGO-CONNECTED-SCENE",
+      "role": "connected loading bay, container corridor and checkpoint",
+      "path": "BlackOut/Assets/BLACKOUT/Scenes/Levels/CargoStation.unity",
+      "status": "environment_reviewed",
+      "technical": {"new_zone_m": [60, 9.2, 24], "collision_probe_radius_m": 0.4, "collision_probe_height_m": 1.9, "floor_sample_interval_m": 0.35, "validation": "docs/images/production/cargo-station/validation.json", "runtime_player_controller": false},
+      "source": {"kind": "authored-scene", "url_or_tool": "Unity Editor via Unity CLI; BlackoutCargoBuilder and BlackoutCargoRefinement", "creator": "Assembled for BLACKOUT", "license": "Project scene with existing third-party dependencies; see entries above"},
+      "verification": {"native_scale_reviewed": true, "in_engine_reviewed": true, "technical_checks_passed": "main route, power socket, recovery pocket, closed/open gate, missing references, reopen and Play Mode smoke check", "approved_by": "agent environment review; performance and gameplay pending"}
+    }
+  ]
+}

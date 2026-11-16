@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "art_direction_brief": "docs/art-direction/BLACKOUT_ArtBible.md",
+  "created_at": "2026-09-30",
+  "technical_frame": {
+    "engine": "Unity 6000.3.22f1 / URP 17.3.0 Lit",
+    "size": "1024x1024",
+    "view": "1920x1080 TPS environment review",
+    "world_scale": "1 Unity unit = 1 m; UV0 normalized to metres on new surfaces",
+    "filtering": "Trilinear, mipmaps, anisotropy 8, Repeat",
+    "color_space": "BaseColor sRGB; normal and MetalSmooth linear; R=metallic, A=smoothness",
+    "compression": "Unity CompressedHQ; normal map importer; CPU Read/Write disabled",
+    "geometry_collision": "Unchanged; project-owned mesh copies modify UV0 and tangents only",
+    "performance_verified": false
+  },
+  "visual_decision": "Agent-selected neutral, restrained microdetail for worn public cargo terminal. Matte painted containers, concrete floor, localized damp edge tiles, polished metal rails, rubber and opaque smoked glazing. No decorative emission or new lights.",
+  "paths": {
+    "materials": "BlackOut/Assets/BLACKOUT/Art/Materials/CargoStation",
+    "textures": "BlackOut/Assets/BLACKOUT/Art/Textures/CargoStation",
+    "source": "Tools/ArtSources/CargoStation",
+    "authoring": "BlackOut/Assets/BLACKOUT/Scripts/Editor/BlackoutCargoMaterials.cs",
+    "scene": "BlackOut/Assets/BLACKOUT/Scenes/Levels/CargoStation.unity",
+    "report": "docs/images/production/cargo-materials/validation.json"
+  },
+  "assets": [
+    {
+      "id": "CARGO-CONCRETE-PBR",
+      "role": "dry and damp concrete floor; impact barrier base",
+      "families": [
+        "Concrete",
+        "DampConcrete"
+      ],
+      "source": {
+        "kind": "AI-generated base color plus authored PBR parameter maps",
+        "tool": "built-in image_gen",
+        "prompt": "Use case: photorealistic-natural. Asset type: tileable game PBR BASE COLOR texture, not a material sphere or scene. Create a single square 1024x1024 seamless texture of aged industrial warehouse concrete, covering about 3 metres square. Orthographic straight-on surface only, perfectly uniform diffuse shadowless lighting, no baked ambient shadows or reflections. Medium neutral warm grey cement around RGB 143 141 132, fine exposed aggregate, small pits, subtle mottling and faint worn floor abrasions, restrained low contrast. No grid, tiles, borders, large cracks, debris, painted lines, letters, logos, watermark, perspective or objects. The whole image is the flat surface. All four edges must repeat seamlessly. Realistic scale, quiet broad variation, physically plausible old public cargo terminal, not rubble. This will be used at 1K with mipmaps in Unity, with separate shader roughness and micro-normal maps.",
+        "source_file": "Tools/ArtSources/CargoStation/Concrete_Source.png",
+        "generation_id": "exec-f7c57a8e-1408-4d35-aa8f-0cfda3f02532",
+        "license_note": "Generated for this project via OpenAI; not a third-party material scan. Subject to applicable OpenAI terms; no separate CC license asserted."
+      },
+      "edits": [
+        "Normalize to 1K",
+        "24 px opposite-edge seam reconciliation",
+        "Artist-controlled micro-normal estimate, not a scanned physical normal",
+        "Periodic damp mask affects base color and smoothness only in damp variant"
+      ],
+      "status": "environment_reviewed_not_performance_certified"
+    },
+    {
+      "id": "CARGO-COATING-PBR",
+      "role": "container paint, gate armour, graphite housings, safety paint, rubber and opaque glazing finish",
+      "families": [
+        "CoatedSteel"
+      ],
+      "source": {
+        "kind": "AI-generated neutral base color plus authored PBR parameter maps",
+        "tool": "built-in image_gen",
+        "prompt": "Use case: photorealistic-natural. Asset type: seamless tileable BASE COLOR texture for realistic Unity industrial environment materials. A single flat square 1024x1024 aged painted steel surface, representing one square metre, top-down orthographic with absolutely uniform shadowless diffuse lighting. Neutral light grey paint (around RGB 170,170,166) so it can be tinted blue, oxide red or ochre in engine. Most paint intact; subtle powdery coating grain, a few tiny short irregular hairline scratches and isolated pin-sized dark grey exposed steel chips, slight muted dirt variation. Restrained contrast and micro-detail, not destroyed or peeling. No large damage islands, no metal corrugation, no seams or panels, no rivets, no rust orange, no shadows, no reflections, no edges, no labels or objects. This is raw diffuse albedo surface data, not a photographed object or material sphere. All 4 edges seamlessly repeat. Industrial public cargo terminal realism. Keep distribution even so repetition is invisible from 5 metres.",
+        "source_file": "Tools/ArtSources/CargoStation/CoatedSteel_Source.png",
+        "generation_id": "exec-3e972a5f-61c8-4997-a3f0-b9974da42a7a",
+        "license_note": "Generated for this project via OpenAI; not a third-party scan; applicable OpenAI terms."
+      },
+      "edits": [
+        "Normalize to 1K and reconcile opposite edges",
+        "Tint variants in Unity; dielectric coating with small exposed-metal specks",
+        "Different smoothness and normal strengths for rubber and smoked opaque glazing"
+      ],
+      "status": "environment_reviewed_not_performance_certified"
+    },
+    {
+      "id": "CARGO-BARE-METAL-PBR",
+      "role": "bare steel rails, gunmetal turret, galvanized conduit",
+      "families": [
+        "BrushedSteel",
+        "GalvanizedSteel"
+      ],
+      "source": {
+        "kind": "authored-procedural material data",
+        "tool": "BlackoutCargoMaterials.BuildMetal",
+        "creator": "Authored for BLACKOUT",
+        "license_note": "Project-authored source code and outputs"
+      },
+      "status": "environment_reviewed_not_performance_certified"
+    },
+    {
+      "id": "CARGO-KIT-FINISH-COPIES",
+      "role": "harmonized walls, roof and existing kit props without losing atlas detail",
+      "source": {
+        "kind": "derivatives of existing licensed project assets",
+        "tool": "BlackoutCargoMaterials.KitCopy",
+        "license_note": "Existing SciFi Warehouse Kit source terms remain applicable. No original kit files or Intro.prefab edited; do not redistribute raw package assets."
+      },
+      "status": "environment_reviewed_not_performance_certified"
+    }
+  ]
+}
