@@ -37,6 +37,11 @@ sysinfo.txt
 # Local Unity exercise project
 /Exercise/
 
+# Downloaded local utilities (source art under Tools/ArtSources remains tracked)
+/Tools/ffmpeg/
+/Tools/uv/
+/Tools/*.zip
+
 # OS files
 .DS_Store
 Thumbs.db
