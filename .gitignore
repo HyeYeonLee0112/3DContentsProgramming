@@ -36,6 +36,7 @@ sysinfo.txt
 
 # Local Unity exercise project
 /Exercise/
+/TPSExercise/
 
 # Downloaded local utilities (source art under Tools/ArtSources remains tracked)
 /Tools/ffmpeg/
